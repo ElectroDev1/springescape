@@ -1,3 +1,22 @@
+let x = 0;
+let y = 0;
+function ScrollBackground(){
+
+   
+
+        x-=1;
+        y-=1;//here
+
+
+        var bg = document.getElementById('scrollingBackground')
+
+        bg.style.backgroundPositionX = x + 'px '
+        bg.style.backgroundPositionY = y + 'px '
+
+
+
+}
+setInterval(ScrollBackground, 20);
 
 {//MODAL SYSTEM
 
@@ -178,6 +197,13 @@
 
         modalCloseButtons[a].onclick = closeModal;
 
+    }
+
+    const modalScreenshots = document.getElementsByClassName('gameScreenshot');
+
+    for (var a = 0; a < modalScreenshots.length; a++) {
+        
+        modalScreenshots[a].onclick = closeModal;
     }
 
 }

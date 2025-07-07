@@ -32,7 +32,7 @@
 
     <script>
 
-        window.location.href="https://store.steampowered.com/app/2906210/Spring_Escape/"
+        //window.location.href="https://store.steampowered.com/app/2906210/Spring_Escape/"
     </script>
 
 
@@ -40,21 +40,24 @@
 
 <body>
 
-    <div class="patternBackground"></div>
+    <div class="patternBackground" id="scrollingBackground"></div>
 
     <div class="WIP-container">
 
-      
-
-
-        <h2 style="margin-bottom: 1rem;">HEY THERE!</h2>
-
+        <div class="wipBtnCt">
+            <img style="width:600px; margin-top:3rem; margin-left:50px; margin-bottom:1.5rem;
+            
+                -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+                filter: drop-shadow(0px 0px 10px #ffffff);
+            " src="Assets/Images/game_logo_final.webp">
+        </div>
         
+        <p style="margin: 0 auto; margin-bottom:3rem; width:50%px; font-family: Renogare_site; width:50%
+         ">An action packed 2D platformer about diving inside dirt and moving through countless obstacles with grace.<br>Will you help Patchy and Tulip reach the surface?</p>
 
-        <p>This webpage is currently under construction - more things are coming soon!<br>For updates on the game, check us on the following platforms:</p>
-
-
+        <a href="https://store.steampowered.com/app/2906210/Spring_Escape/" style="font-family: Renogare_site; font-size: 2em;">WISHLIST ON STEAM</a>
      
+        <!--
         <div class="wipBtnCt">
 
             <button onclick='window.location.href="https://twitter.com/spring_escape_"'>Twitter</button>
@@ -62,77 +65,102 @@
             <button onclick='window.location.href="https://discord.gg/KRfvxPTtP7"'>Soundtrack</button>
             <button onclick='window.location.href="https://discord.gg/KRfvxPTtP7"'>Discord server</button>
 
-        </div>
+        </div>-->
 
         <hr>
 
-        <h3 style="margin-top:2rem; margin-bottom:0.2rem; letter-spacing: 0.1em; display:hidden;">Play the latest demo - Spring Escape: Sneak Peek</h3>
-
+        
+        <div class="wipBtnCt" style="margin-top:5rem; margin-bottom:5rem;">
+            <img style="width:1000px; margin-top:8rem;  margin-bottom:1.5rem;
+                position:absolute; z-index: -2;
+                opacity: 0.5;
+                -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+                filter: drop-shadow(0px 0px 10px #ffffff);
+            " src="Assets/Images/DDD_logo_singled.webp">
+            <h3 style=" margin-top:2rem; margin-bottom:0.2rem; letter-spacing: 0.1em; display:hidden; font-size:2em; padding-top:2rem;">Spring Escape - <span style="color:#ff5757">Deep Down Demo</span></h3>
+        
+        </div>
+        
+        <p style="width:50%; margin: 0 auto; margin-top:1.2rem; margin-bottom: 1rem;">A vast look at the world of Spring Escape and its first Sector! With 4 action packed levels, lots of secrets to uncover and unlock, and a threat lurking in the background...<br><br>Out now on Steam!</p>
         <div class="wipBtnCt" style="display:hidden;">
-
-            <button  id="covered" style="width:800px; aspect-ratio: 2420 / 1080;" onclick='window.location.href="https://electrodev.itch.io/spring-escape-sneak-peek"'>
             
-                <img style="width:100%; height:100%; margin:0;" src="Assets/Images/coverArt1Sneaka.png">
+            <button  id="covered" style="width:560px; aspect-ratio: 1920 / 1080;" onclick='window.location.href="https://store.steampowered.com/app/3151470/Spring_Escape_Deep_Down_Demo/"'>
+            
+                <img style="width:100%; height:100%; margin:0;" src="Assets/Images/coverArtDDD.jpg">
                 
             
             </button> 
+
+            <div class="wipBtnCt">
+                <iframe
+                style="box-shadow:0px 0px 0px 3px white; margin-top:5px;"
+                width="560" height="315" src="https://www.youtube.com/embed/8jYvJ2vYD4o?si=XQNljJNaWfuIQB8_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
           
-
-            <p>Spring Escape: Sneak Peek is the new demo featuring a ton of changes and improvements both visually, technically, and mechanically for Spring Escape, a charming 2D platformer about a not-so-unlikely duo making their ways and digging through snazzy environments filled with obstacles.</p>
-
-            <ul id="demoFeatures" style="margin:1rem 0;">
-                <li><p>Revamped nearly every graphic in the game</p></li>
-                <li><p>A brand new version of the first level with a little cutscene to boot and a new completion condition</p></li>
-                <li><p>New movement options to let the player move around with style</p></li>
-                <li><p>A new time attack mode where you race to beat a pre-determined time</p></li>
-                <li><p>A new control remapping menu to change how the game controls to your liking</p></li>
-            </ul>
-
-
         </div>     
 
-        <div class="wipBtnCt" style="margin-top:1rem; margin-bottom:2rem;">
+        <div class="wipBtnCt" style="margin-top:2rem; margin-bottom:2rem;">
 
-            <img id="gameScreens" class="modal-open" openmodal="modal-GS3"  style="width:400px; margin:0;" src="Assets/Images/Screenshots/screen48.png">
-            <img id="gameScreens" class="modal-open" openmodal="modal-GS5"  style="width:400px; margin:0;" src="Assets/Images/Screenshots/screen50.png">
-            
-                <img id="gameScreens" class="modal-open" openmodal="modal-GS1"  style="width:400px; margin:0;" src="Assets/Images/Screenshots/screen45.png">
-                <img id="gameScreens" class="modal-open" openmodal="modal-GS6"  style="width:400px; margin:0;" src="Assets/Images/Screenshots/screen52.png">
-                <img id="gameScreens" class="modal-open" openmodal="modal-GS2"  style="width:400px; margin:0;" src="Assets/Images/Screenshots/screen46.png">
-               
-                <img id="gameScreens" class="modal-open" openmodal="modal-GS4"  style="width:400px; margin:0;" src="Assets/Images/Screenshots/screen49.png">
-                <img id="gameScreens" class="modal-open" openmodal="modal-GS7"  style="width:400px; margin:0;" src="Assets/Images/Screenshots/screen53.png">
-                
+            <img id="gameScreens" class="modal-open" openmodal="modal-GS1"  style="width:350px; margin:0;" src="Assets/Images/Screenshots/screen1.png">
+            <img id="gameScreens" class="modal-open" openmodal="modal-GS2"  style="width:350px; margin:0;" src="Assets/Images/Screenshots/screen2.png">
+            <img id="gameScreens" class="modal-open" openmodal="modal-GS3"  style="width:350px; margin:0;" src="Assets/Images/Screenshots/screen3.png">
+            <img id="gameScreens" class="modal-open" openmodal="modal-GS4"  style="width:350px; margin:0;" src="Assets/Images/Screenshots/screen4.png">
+            <img id="gameScreens" class="modal-open" openmodal="modal-GS5"  style="width:350px; margin:0;" src="Assets/Images/Screenshots/screen5.png">
                
                 
          
 
         </div>
-        <div class="wipBtnCt">
-            <button  id="covered" style="width:800px; aspect-ratio: 2420 / 1080;"  onclick='window.location.href="https://electrodev1.github.io/springescape/Assets/Spring Escape Press Kit 2023.zip"'>
+
+        <hr>
+
+        <h3 style="margin-top:rem; margin-bottom:0.2rem; letter-spacing: 0.1em; display:hidden; font-size:2em;">What is Spring Escape?</h3>
+
+        <div class="wipBtnCt" style="width:100%; align-items: center; justify-content:center; margin-top:1rem; margin-bottom:3rem;">
+            <p style="font-size:1.25rem; width:50%"  >
+                Spring Escape is a 2D platformer that tells the journey of
+                <span style="color:#66ccff">Patchy</span>, a little living piece of dirt, and <span style="color:#66ccff">Tulip</span>,
+                a talking tulip flower with a big smile on his face planted right on top of Patchy.
+                One day, the two wake up in the depths of a long abandoned laboratory, and together they set out to find a way to the surface.
+                <br><br>Along the journey they'll meet "helpful" allies like the shopkeeper Daisy, a Gerbera daisy that can teach Tulip to change the colors of his petal for the price of a handful tasty crystals, and great dangers like the giant worm rumored to target anything that moves around the depths.
+                <br><br><br>The gameplay centers around moving with grace through levels packed with obstacles, Patchy and Tulip have plenty of moves to get through the dangerous environments they'll find themselves in, in particular they can plant themselves inside dirt and move through them with ease, however different types of dirt can lead to wildly different behaviours.
+                    
+            </p>
+
+             <img style="width:500px; margin:0 auto;
+              
+                -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+                filter: drop-shadow(0px 0px 10px #ffffff);
+             "
+              src="Assets/Images/Artwork/patchy and tulip transparent.webp">
+        </div>
+
+    
+
+        <hr>
+
+        <h3 style="margin-top:2rem; margin-bottom:0.2rem; letter-spacing: 0.1em; display:hidden; font-size:2em;">Press Kit</h3>
+
+         <div class="wipBtnCt">
+            <button  id="covered" style="width:800px; aspect-ratio: 2420 / 1080;"  onclick='window.location.href="https://electrodev1.github.io/springescape/Assets/Spring Escape Press Kit.zip"'>
             
-                <img style="width:100%; height:100%; margin:0;" src="Assets/Images/presskitcover.png">
+                <img style="width:100%; height:100%; margin:0;" src="Assets/Images/coverArtPressKit.webp">
                 
             
             </button>
-        </div>
-        <div class="wipBtnCt" style="width:100%; align-items: center; justify-content:center;">
-            <p >Spring Escape follows the story of Patchy, a sentient piece of dirt with an all-natural, flourishing hairstyle, and Tulip, an energetic flower ready to jump into action (and conclusions). This duo of nature wake up in a mysterious testing facility on the brink of collapse, but the two are determined to get out of this place, while possibly understanding what got them there in the first place.</p>
-            <img style="width:40vw; min-width:25rem;" src="Assets/Images/Artwork/vineline_transparent.png">
-   
         </div>
 
 
     </div>
 
-    <p style="margin-left:1rem;">Spring Escape 2023</p>
+    <p style="margin-left:1rem;">Spring Escape 2025</p>
 
     <div class="modal modal-closed" id="modal-GS1">
 
         <div class="modal-container" style="display:flex; align-items:center; justify-content:center">
     
            
-             <img style="width:80%; height:auto; box-shadow:0 0 0 4px white; image-rendering: pixelated;"  src="Assets/Images/Screenshots/screen45.png"> 
+             <img class="gameScreenshot" id="modal-GS1"  src="Assets/Images/Screenshots/screen1.png"> 
              <div class="modal-close-x modal-close" id="modal-GS1">✖</div>
         </div>
     
@@ -143,7 +171,7 @@
         <div class="modal-container" style="display:flex; align-items:center; justify-content:center">
     
            
-             <img style="width:80%; height:auto; box-shadow:0 0 0 4px white; image-rendering: pixelated;"  src="Assets/Images/Screenshots/screen46.png"> 
+             <img class="gameScreenshot" id="modal-GS2"  src="Assets/Images/Screenshots/screen2.png"> 
              <div class="modal-close-x modal-close" id="modal-GS2">✖</div>
         </div>
     
@@ -154,7 +182,7 @@
         <div class="modal-container" style="display:flex; align-items:center; justify-content:center">
     
            
-             <img style="width:80%; height:auto; box-shadow:0 0 0 4px white; image-rendering: pixelated;"  src="Assets/Images/Screenshots/screen48.png"> 
+             <img class="gameScreenshot" id="modal-GS3"  src="Assets/Images/Screenshots/screen3.png"> 
              <div class="modal-close-x modal-close" id="modal-GS3">✖</div>
         </div>
     
@@ -165,7 +193,7 @@
         <div class="modal-container" style="display:flex; align-items:center; justify-content:center">
     
            
-             <img style="width:80%; height:auto; box-shadow:0 0 0 4px white; image-rendering: pixelated;"  src="Assets/Images/Screenshots/screen49.png"> 
+             <img class="gameScreenshot" id="modal-GS4" src="Assets/Images/Screenshots/screen4.png"> 
              <div class="modal-close-x modal-close" id="modal-GS4">✖</div>
         </div>
     
@@ -176,7 +204,7 @@
         <div class="modal-container" style="display:flex; align-items:center; justify-content:center">
     
            
-             <img style="width:80%; height:auto; box-shadow:0 0 0 4px white; image-rendering: pixelated;"  src="Assets/Images/Screenshots/screen50.png"> 
+             <img class="gameScreenshot" id="modal-GS5"  src="Assets/Images/Screenshots/screen5.png"> 
              <div class="modal-close-x modal-close" id="modal-GS5">✖</div>
         </div>
     
@@ -186,7 +214,7 @@
         <div class="modal-container" style="display:flex; align-items:center; justify-content:center">
     
            
-             <img style="width:80%; height:auto; box-shadow:0 0 0 4px white; image-rendering: pixelated;"  src="Assets/Images/Screenshots/screen52.png"> 
+             <img class="gameScreenshot" id="modal-GS6"  src="Assets/Images/Screenshots/screen6.png"> 
              <div class="modal-close-x modal-close" id="modal-GS6">✖</div>
         </div>
     
@@ -196,7 +224,7 @@
         <div class="modal-container" style="display:flex; align-items:center; justify-content:center">
     
            
-             <img style="width:80%; height:auto; box-shadow:0 0 0 4px white; image-rendering: pixelated;"  src="Assets/Images/Screenshots/screen53.png"> 
+             <img class="gameScreenshot" id="modal-GS7"  src="Assets/Images/Screenshots/screen7.png"> 
              <div class="modal-close-x modal-close" id="modal-GS7">✖</div>
         </div>
     
