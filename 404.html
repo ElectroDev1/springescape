@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>You found a mascot!</title>
+    <link rel="icon" id="site-icon" href="mascot.gif">
+
+    <script src="\Code\jquery.js"></script>
+    <script src="https://kit.fontawesome.com/e637404688.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<style>
+
+    .mascot{
+        image-rendering: pixelated; position: absolute; left:50vw; top:50vh; user-select: none; scale: 10;
+        transition: scale 0.5s;
+    }
+
+</style>
+
+<body style="background-color: black; align-items: center; display:block; overflow: hidden;">
+
+    <img src="/mascot.gif" class="mascot" id="he">
+
+</body>
+
+<script>
+
+    var mascot = document.getElementById("he")
+    mascot.addEventListener('click',moveMascot)
+    
+    var MascotX = 0
+    var MascotY = 0
+    var clicks = 0
+
+    //top -48
+    //bottom 48
+
+    function clamp(number, min, max) {
+        return Math.max(min, Math.min(number, max));
+
+    }
+
+    function goAway(){
+         window.location.href="/index.html"
+    }
+
+    function moveMascot(e){
+        clicks +=1
+
+        if(clicks>14){ mascot.style.scale=50;
+            setInterval(goAway,250)
+           }
+
+        MascotX += (Math.random() * 6) - 3
+        MascotY += (Math.random() * 6) - 3
+       
+
+        MascotX = clamp(MascotX, -70, 70)
+        MascotY = clamp(MascotY, -30, 30)
+
+        mascot.style.position = "relative";
+        mascot.style.transform = "translate(" + MascotX + "px, "+MascotY + "px)";
+        e.preventDefault();     //prevents the page from redirecting
+
+
+    }
+
+</script>
