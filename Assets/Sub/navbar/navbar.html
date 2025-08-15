@@ -1,0 +1,45 @@
+<head>
+
+ <link rel="stylesheet" href="/Assets/Sub/navbar/navbar-style.css">
+ <link rel="stylesheet" href="/Assets/Sub/bottom/bottom-style.css">
+
+</head>
+<div class="navbar-container" id="NAVBAR">
+  <a href="https://electrodev.net/springescape" class="navbar-icon"><img src="/Assets/Images/relicon.png" style="height:80%;"></a>
+
+
+    <p class="socials"> 
+                <a href="https://x.com/spring_escape_" class="fa fa-twitter"></a>
+                <a href="https://bsky.app/profile/springescape.bsky.social" class="fa fa-bluesky"></a>
+                <a href="https://www.youtube.com/@electro_dev" class="fa fa-youtube"></a>
+                <a href="https://www.youtube.com/@electro_dev" class="fa fa-discord"></a>
+    </p>
+</div>
+
+<script>
+
+    console.log("Navbar code\n")
+
+    var navbar_buttons = document.getElementsByClassName("navbar-button-inactive")
+   
+    var path = window.location.pathname;
+    var page = path.split("/").pop().replace(".html","");
+    if(page=="index"){page="springescape"}
+    console.log( page );
+    console.log("---")
+
+    for(var i=0; i<navbar_buttons.length; i++){
+
+        var button_page = navbar_buttons[i].getAttribute("href").split("/").pop().replace(".html","")
+        console.log(button_page)
+
+        if(page==button_page){
+            console.log("FOUND MATCH")
+            console.log(navbar_buttons[i])
+            navbar_buttons[i].classList.replace("navbar-button-inactive","navbar-button")
+        }
+    }
+
+</script>
+
+<script src="\Code\script.js"></script>

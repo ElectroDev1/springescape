@@ -32,6 +32,11 @@
 
     <img src="/mascot.gif" class="mascot" id="he">
 
+    <audio id="myAudio" loop="false">
+        <source src="/Assets/Audio/mad_laugh.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
 </body>
 
 <script>
@@ -52,14 +57,17 @@
     }
 
     function goAway(){
-         window.location.href="/index.html"
+        
+         window.location.href="https://electrodev.net/springescape"
     }
 
     function moveMascot(e){
         clicks +=1
 
         if(clicks>14){ mascot.style.scale=50;
-            setInterval(goAway,250)
+            var x = document.getElementById("myAudio"); 
+            x.play()
+            setInterval(goAway,500)
            }
 
         MascotX += (Math.random() * 6) - 3
