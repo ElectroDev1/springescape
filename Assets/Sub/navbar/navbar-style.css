@@ -49,6 +49,7 @@
     --navbar-font-size: 2rem;
     --navbar-max-font-size: 100%;
     --navbar-spacing: 1.25vw;
+    --navbar-spacing-small: 0.6vw;
     --navbar-min-width: 10px;
 
     --navbar-font-size-mobile: 1.2em;
@@ -93,6 +94,7 @@
 
 .navbar-icon {
 height:100%; position:absolute; left:5%; top:5%;
+z-index: 100;
 }
 
 .socials {
@@ -233,6 +235,12 @@ height:100%; position:absolute; left:5%; top:5%;
 
     user-select: none;
     transform: skewX(var(--navbar-skew))
+}
+
+@media only screen and (max-width: 427px) {
+    .navbar-buttons>.navbar-button,.navbar-buttons>.navbar-button-inactive {
+        padding: 0 var(--navbar-spacing-small);
+    }
 }
 
 .navbar-button-inactive{

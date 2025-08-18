@@ -591,3 +591,139 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     font-size: 1.25em;
 }
+
+.blog-container {
+    width:100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content:center;
+   
+}
+
+.blog-button {
+    
+   user-select: none;
+    display:flex;
+    background: rgba(0, 0, 0, 0.429);
+    width:100%;
+    height: 45vh;
+    max-width: 60rem;
+    max-height: 19rem;
+    box-shadow: 0 0 0 2px var(--color-white);
+    margin: 0 auto;
+   
+    overflow: hidden;
+    justify-content:space-around;
+    transition: all 0.18s;
+    margin-top: 1rem;
+    position:relative;
+    top: 0px;
+}
+
+.blog-button:active {
+    top: 4px;
+}
+
+.blog-image{
+    transition: all 0.18s;
+   height:90%;
+
+   position: absolute;
+   left:2%;
+   top:2%;
+}
+
+.blog-text{
+    text-align: right;
+    
+    width:60%;
+    position: absolute;
+    right:2%;
+}
+
+
+.blog-date{
+ position: absolute; 
+    bottom: 2%;
+    right: 2%; 
+}
+
+.blog-hover-triangle{
+ 
+    height:12%;
+    position:absolute;
+    left:0;
+    top:0;
+    transition: all 0.1s;
+    transition-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1);
+
+}
+
+.blog-button:hover{
+    background: rgba(66, 66, 66, 0.429);
+    box-shadow: 0 0 0 4px var(--color-white);    
+}
+.blog-header{
+    color: var(--color-blue-ll);
+}
+.blog-button:hover > .blog-hover-triangle{
+    height:20%;
+}
+
+@media only screen and (max-width: 710px) {
+    .blog-image{
+        height:80%;
+        filter:opacity(0.65)
+    }
+
+    .blog-text, .blog-date{
+        font-size: 1rem;
+    }
+
+    .blog-button{
+        height:35vh;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .blog-button{
+        width:90%;
+        height:40vh
+    }
+}
+
+@media only screen and (max-width: 427px) {
+
+    .blog-button{
+        width:80%;
+        height:25vh;
+    }
+
+    .blog-text, .blog-date{
+        font-size: 0.8rem;
+        width:60%;
+    }
+
+    .blog-date{
+        scale:0;
+    }
+
+    .blog-image{
+        filter:opacity(0.7)
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .blog-button{
+        height:20vh;
+    }
+
+    .blog-image{
+        height:80%;
+        top:3%;
+        left:4%
+    }
+}
+

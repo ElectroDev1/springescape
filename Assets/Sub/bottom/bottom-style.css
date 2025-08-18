@@ -31,12 +31,14 @@
 }
 
 .bottom-container{
+    box-sizing: border-box;
     width:100%;
     background: var(--color-black-alt);
 
     border-top: 3px solid var(--color-white);
 
     font-size: 1.1rem;
+
 }
 
 .bottom-container a{

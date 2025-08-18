@@ -12,7 +12,7 @@
     <meta property="og:title" content="Spring Escape - Demo Postmortem">
     <meta property="og:description" content="">
     <meta property="og:image" content="https://electrodev1.github.io/springescape/Assets/Images/relicon.png">
-    <meta property="og:url" content="https://electrodev1.github.io/springescape">
+    <meta property="og:url" content="https://electrodev1.github.io/springescap/blog/demo-postmortem">
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@spring_escape_" />
     <meta name="twitter:creator" content="@spring_escape_" />
@@ -20,17 +20,19 @@
     <title>Spring Escape - Demo Postmortem</title>
     <link rel="icon" id="site-icon" href="Assets/Images/relicon.png">
 
-    <script src="\Code\jquery.js"></script>
+    <script src="../Assets/JS/jquery.js"></script>
     <script src="https://kit.fontawesome.com/e637404688.js" crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="https://kit.fontawesome.com/e459a4efec.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
-    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="../Assets/CSS/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script>
+         $(function () { $(".navbar").load("../Assets/Sub/navbar/navbar.html"); });
+        $(function () { $(".bottom").load("../Assets/Sub/bottom/bottom.html"); });
 
         //window.location.href="https://store.steampowered.com/app/2906210/Spring_Escape/"
     </script>
@@ -41,8 +43,12 @@
 <body>
 
     <div class="patternBackground" id="scrollingBackground"></div>
-
+    <div class="navbar"></div>
     <div class="WIP-container">
+
+        <div style="width:70%; height:140px; position:relative; margin:0 auto;">
+            <a href="https://electrodev.net/springescape/blog?n=01" style="position:absolute; left:0; bottom:0;"> < Back to blogs </a>
+        </div>
 
         <h1>Spring Escape<br>Deep Down Demo Postmortem</h1>
         
@@ -89,15 +95,15 @@ I'm currently thinking better ways to share future progress reports, take advant
             Bye!
         </p>
 
-        <img src="Assets/Images/Artwork/spr_patchy_hapy.png">
+        <img src="../Assets/Images/Artwork/spr_patchy_hapy.png">
 
         <br><br><br>
 
-        <a href="https://electrodev.net/springescape">< Back to main page</a>
     </div>
 
-    <p style="margin-left:1rem;">Spring Escape 2025</p>
-    <script src="Assets/JS/code.js"></script>
+     <div class="bottom"></div>
+
+    <script src="../Assets/JS/code.js"></script>
 
 
 </body>

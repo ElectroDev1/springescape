@@ -9,15 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="theme-color" content="#66ccff">
-    <meta property="og:title" content="Spring Escape - About">
+    <meta property="og:title" content="Spring Escape - Blog">
     <meta property="og:description" content="">
     <meta property="og:image" content="https://electrodev.net/springescape/Assets/Images/relicon.png">
-    <meta property="og:url" content="https://electrodev.net/springescape/about">
+    <meta property="og:url" content="https://electrodev.net/springescape/blog">
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@spring_escape_" />
     <meta name="twitter:creator" content="@spring_escape_" />
 
-    <title>Spring Escape - About</title>
+    <title>Spring Escape - Blog</title>
     <link rel="icon" id="site-icon" href="Assets/Images/relicon.png">
 
     <script src="Assets\JS\jquery.js"></script>
@@ -35,6 +35,7 @@
         $(function () { $(".navbar").load("Assets/Sub/navbar/navbar.html"); });
         $(function () { $(".bottom").load("Assets/Sub/bottom/bottom.html"); });
 
+
         //window.location.href="https://store.steampowered.com/app/2906210/Spring_Escape/"
     </script>
 
@@ -48,12 +49,54 @@
     <div class="navbar"></div>
     
     <div id="site-top" class="WIP-container">
+        
+        <div class="blog-container" style="margin-top:140px">
+
+            <div class="blog-list" id=""></div>
+            
+
+        </div>
 
     </div>
 
     <div class="bottom"></div>
 
-    <script src="/Assets/JS/code.js"></script>
+    <script src="Assets/JS/code.js"></script>
+
+    <script>
+
+        function assignBlogLinks(){
+            var blog_buttons = document.getElementsByClassName("blog-button")
+
+            for(var i=0; i<blog_buttons.length; i++){
+                var btn = blog_buttons[i]
+                var id = btn.getAttribute("id")
+            
+                btn.setAttribute("href","https://electrodev.net/springescape/blog/"+id)
+            }
+        }
+
+        function loadBlogList(num="01"){
+            
+            var list = document.getElementsByClassName("blog-list")
+            list[0].id = num
+
+            $(function () { 
+            
+                $(".blog-list").load("Assets/Sub/bloglist/bloglist_"+num+".html"); });
+            
+        }
+
+        let params = new URLSearchParams(document.location.search);
+        let current_list_num = params.get("n")
+        
+        if(current_list_num==null){ current_list_num="01" }
+       
+        loadBlogList(current_list_num)
+        setInterval(assignBlogLinks,60)
+
+
+    </script>
 
 
 </body>
