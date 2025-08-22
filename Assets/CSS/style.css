@@ -239,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
     position:relative;
     top:0;
     transition:all 0.05s none;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .wipBtnCt>button:hover{

@@ -39,6 +39,44 @@
         //window.location.href="https://store.steampowered.com/app/2906210/Spring_Escape/"
     </script>
 
+    <style>
+        .team-container{
+            user-select: none;
+            display:flex;
+            width: 80%;
+            margin: 0 auto;
+          
+            min-width:200px;
+            margin-top:4rem;
+            justify-content: center;
+            align-items: center;
+             flex-wrap:wrap;
+             
+            max-width:1300px;
+        }
+
+        .team-member{
+            width: 45%;
+            display: block;
+           position: relative;
+            min-width:300px;
+            padding-bottom:1.5rem;
+        }
+
+        .team-pfp{
+            user-select: none;
+            width:45%;
+   
+          border-radius: 50%;
+          box-shadow: 0 0 0px 6px white;
+        }
+
+        .team-desc{
+            width:80%;
+            text-align: center;
+            margin: 0 auto;
+        }
+    </style>
 
 </head>
 
@@ -49,6 +87,22 @@
     <div class="navbar"></div>
     
     <div id="site-top" class="WIP-container">
+
+        <h2 style=" margin-top:7rem; margin-bottom:0.2rem; letter-spacing: 0.1em; display:hidden; font-size:2em;">The team</h2>
+
+        <div class="team-container">
+            <div class="team-member">
+                <a href="https://electrodev.net" ><img class="team-pfp" src="Assets/Images/About/pfp_ele.webp"></a>
+                <h4>ELE</h4>
+                <p class="team-desc">Director, artist, writer, programmer, ELE manages most things Spring Escape.</p>
+            </div>
+
+            <div class="team-member">
+                <a href="https://aurigrave.org" ><img class="team-pfp" src="Assets/Images/About/pfp_bouncy.webp"></a>
+                <h4>Bouncytorch</h4>
+                <p class="team-desc">Bouncytorch is the sole responsible for the game's soundtrack alongside its publishing.</p>
+            </div>
+        </div>
 
     </div>
 
