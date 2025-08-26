@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#16d916">
+    <meta property="og:title" content="Spring Escape - The making of WSP">
+    <meta property="og:description" content="A dive into how Spring Escape's first boss came to be. From a simple chase to bringing it to life in pre-rendered 3D!">
+    <meta property="og:image" content="https://electrodev1.github.io/springescape/Assets/Images/relicon.png">
+    <meta property="og:url" content="https://electrodev1.github.io/springescap/blog/WSP">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@spring_escape_" />
+    <meta name="twitter:creator" content="@spring_escape_" />
+
+    <title>Spring Escape - The making of WSP</title>
+    <link rel="icon" id="site-icon" href="../Assets/Images/relicon.png">
+
+    <script src="../Assets/JS/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/e637404688.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://kit.fontawesome.com/e459a4efec.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+    <link rel="stylesheet" href="../Assets/CSS/style.css">
+    <link rel="stylesheet" href="../Assets/Sub/navbar/navbar-style.css">
+    <link rel="stylesheet" href="../Assets/Sub/bottom/bottom-style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+         $(function () { $(".navbar").load("../Assets/Sub/navbar/navbar.html"); });
+        $(function () { $(".bottom").load("../Assets/Sub/bottom/bottom.html"); });
+
+        //window.location.href="https://store.steampowered.com/app/2906210/Spring_Escape/"
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="patternBackground" id="scrollingBackground"></div>
+    <div class="navbar"></div>
+    <div class="WIP-container" id="site-top">
+
+        <div style="width:70%; height:140px; position:relative; margin:0 auto;">
+            <a href="https://electrodev.net/springescape/blog?n=01" style="position:absolute; left:0; bottom:0;"> < Back to blogs </a>
+        </div>
+
+        <h1>The making of WSP</h1>
+        
+        <hr>
+
+        <h3></h3>
+
+        <p style="text-align: left; width:70%; margin:0 auto;">
+            With Spring Escape: Deep Down Demo we were finally able to show off the game's first boss fight "Unit WSP", a giant excavation
+            unit composed of an unhinged abomination of metal, drills, crystals and wasp motifs. And as our very first foray into creating a boss
+            of this scale, creating it wasn't easy.
+            <br>
+        </p>
+
+        <div style=" width: 40%; margin: 0 auto; margin-top:2rem;">
+            <img style="width:100%; max-width:700px;" src="../Assets/Images/Blog/WSP/WSP.webp">
+        </div>
+
+        <h3 style="margin-top:2rem;">The general philosophy</h3>
+        <p style="text-align: left; width:70%; margin:0 auto;">
+            A question that came around a lot during development was "What do bosses mean in Spring Escape", and it's a very good question. Not every game
+            needs boss fights in the traditional sense, and in a game with very little combat option you have to be especially inventive to create an
+            engaging fight.<br><br>
+            Spring Escape was first made to be about stealth, then fluid platforming, but never about combat. There are no enemies you can defeat, every element
+            supports the platforming and the platforming only, so naturally the first concepts for WSP were very different from the final version. What was important
+            was just having an element in the game that would serve as a narrative shakeup and mark the end of the sector in an impactful way!
+        </p>
+
+        <h3 style="margin-top:2rem;">Early designs and fight</h3>
+
+        <p style="text-align: left; width:70%; margin:0 auto;">
+            The first design for WSP was first established in early 2023 as the game was being revamped (Patchy barely had a pushing animation around that time),
+            it originally went for a more detailed designs, as well as being way bigger. Althgouth its proportions were never really established, I think in the final
+            game you may spot that as well, but for something that big what matters is that the framing looks right.
+            <br>
+            <br>
+            Given drills were already established as the final mechanic of the first world since the first demo, it felt natural that a big drill like creature in
+            charge of all of them would be the very first boss. With a big drill at the back and the animal-esque nature of it, the imagery of wasps came up pretty
+            naturally as well. The giant eye gem came up to give the boss a very clear weak spot, alongside furthering some worldbuilding.
+        </p>
+ 
+        <div style=" width: 60%; margin: 0 auto; margin-top:2rem;">
+            <img style="width:100%; max-width:1200px;" src="../Assets/Images/Blog/WSP/wsp_concept1.webp">
+            <br>
+            <p style="text-align: left; margin-top:-0rem; color:gray">
+                First Escavator WSP concept - Feb. 2023
+            </p>
+        </div>
+
+        <p style="text-align: left; width:70%; margin:0 auto;">
+            WSP wasn't going to get a normal fight at first, instead the first concepts had the player be chased by the boss, where you'd go through some obstacles until
+            a blast vase would allow you to bash into WSP's eye and move onto another phase.
+            <br>In the end that concept didn't really go anywhere, but it was repurposed for the setpiece near the end of level 4.
+        </p>
+
+        <div style=" width: 50%; margin: 0 auto; margin-top:2rem;">
+            <img style="width:100%; max-width:1200px;" src="../Assets/Images/Blog/WSP/wsp_concept2.webp">
+            <br>
+            <p style="text-align: left; margin-top:-0rem; color:gray">
+                WSP chase mockup - April 2024
+            </p>
+        </div>
+
+        <p style="text-align: left; width:70%; margin:0 auto;">
+            So the boss fight moved into a more traditional structure, which would also align more with the other planned bosses.
+        </p>
+
+        <div style=" width: 60%; margin: 0 auto; margin-top:2rem;">
+            <img style="width:100%; max-width:1200px;" src="../Assets/Images/Blog/WSP/wsp_concept3.webp">
+            <br>
+            <p style="text-align: left; margin-top:-0rem; color:gray">
+                WSP battle concept - June 2024
+            </p>
+        </div>
+
+        <h3 style="margin-top:2rem;">Bringing it to life</h3>
+
+        <p style="text-align: left; width:70%; margin:0 auto;">
+            While I really wanted this boss to look huge and imposing, there was always the question of how this would could be displayed in game.
+            Something this be capable of so much movement couldn't be drawn in the same way most other sprites are, especially for just one person, so
+            for a couple of months I spent time researching the best method to animate the boss.
+            <br><br>
+            Before work on the boss started, a setpiece featuring it was already created for the game's third level, where it slowly crawls in the background
+            as you approach the checkpoint.
+        </p>
+
+        <div style=" width: 60%; margin: 0 auto; margin-top:2rem;">
+            <img style="width:100%; max-width:1200px;" src="../Assets/Images/Blog/WSP/wsp_level3.webp">
+            <br>
+            <p style="text-align: left; margin-top:-0rem; color:gray">
+                WSP in Level 3 - March 2024
+            </p>
+        </div>
+
+        <div style=" width: 40%; margin: 0 auto; margin-top:2rem;">
+            <img style="width:100%; max-width:700px;" src="../Assets/Images/Blog/WSP/wsp_reference.webp">
+            <br>
+            <p style="text-align: left; margin-top:-0rem; color:gray">
+                WSP model reference - March 2024
+            </p>
+        </div>
+
+        <p style="text-align: left; width:70%; margin:0 auto;">
+            To create the animation for it, a quick model of the boss was made with simple materials, pre-rendering it to a sprite.
+            <br>
+            This method proved quite effective, saving a lot of time in making the movements and handling shading while allowing for smooth animations without much work, however
+            a lot of time was still put into seeing how it could be translated to be larger and more detailed.
+            <br><br>
+            The first idea was to create the movements in Blender, and then redraw the frames in Aseprite using the render as a reference.
+        </p>
+        
+        <div style=" width: 40%; margin: 0 auto; margin-top:2rem;">
+            <img style="width:100%; max-width:800px;" src="../Assets/Images/Blog/WSP/wsp_blender1.webp">
+            
+             <img style="width:100%; max-width:800px;" src="../Assets/Images/Blog/WSP/wsp_aseprite.webp">
+             <br>
+            <p style="text-align: left; margin-top:-0rem; color:gray">
+                First WSP sprite test - July 2024
+            </p>
+        </div>
+
+        <p style="text-align: left; width:70%; margin:0 auto;">
+            This proved to ease a lot of aspects, however it still remained extremely time consuming to trace over and shade everything properly, and parts like the pupil were also challenge at such
+            a large scale.<br>
+            By this time the first few plans for what would turn into Deep Down Demo were taking shape, alongside the deadline established by Steam Next Fest, so I knew
+            this boss couldn't take a long time to be made.<br><br>
+            Around this time I really got into the Bloons Tower Defense series, especially BTD6, which distinguishes itself from previous titles by having really
+            stylized 3D models with textures composed of simple colors and painted shadows, and it was exploring this that made me realize I could pull off something similar
+            for WSP.<br><br>
+            So I ended up taking the model, improving it a bit and adding new features, and giving it proper textures.
+        </p>
+
+        <div style=" width: 60%; margin: 0 auto; margin-top:2rem;">
+            <img style="width:100%; max-width:1200px;" src="../Assets/Images/Blog/WSP/wsp_blender2.webp">
+            <br>
+            <p style="text-align: left; margin-top:-0rem; color:gray">
+               Finalized WSP model in Blender
+            </p>
+        </div>
+
+        <p style="text-align: left; width:70%; margin:0 auto;">
+            With this setup animations could be made incredibly quickly, with Blender immediately exporting the frames to their correct size and applying an outline automatically.<br>
+            After that the frames could be imported into Gamemaker, which would automatically crop the sprites when compiling, so there was no need to worry about empty space.
+            <br><br>
+            Obviously, over time this method ended up showing some natural disadvantages, it's not always easy to iterate even with the incredibly low rendering times, alongside the load
+            of sprites it created (The rendering folder is nearly 1.5GB) which caused a lot of headaches programming wise.
+        </p>
+
+        <h3 style="margin-top:2rem;">The final fight</h3>
+
+        <p style="text-align: left; width:70%; margin:0 auto;">
+            And that was how WSP's graphics were created, but that was just half of the work, implementing these sprites into a complete battle was a completely different ordeal.
+            <br>
+            How the boss was programmed is quite out of the scope of this blog, but it ended up becoming its own set of challenges to figure out, like how animations and hitboxes could
+            be linked in a visual way instead of eyeballing and praying, which ended up being the very first time Sequences were used for Spring Escape.
+        </p>
+
+        <div style=" width: 60%; margin: 0 auto; margin-top:2rem;">
+            <img style="width:100%; max-width:1200px;" src="../Assets/Images/Blog/WSP/wsp_stage.webp">
+            <br>
+            <p style="text-align: left; margin-top:-0rem; color:gray">
+               Arena mockup - Oct. 2024
+            </p>
+        </div>
+
+        <p style="text-align: left; width:70%; margin:0 auto;">
+            All things considered, creating this boss was definitely the hardest part of development so far, and the fact it was only actively developed for around 4 months just makes it
+            even more incredible, and while not perfectly matching the original vision for it, I think it turned out pretty damn slick!<br>
+            <br>
+            To cap things off, here are a few more concepts for the boss.
+        </p>
+
+         <div style=" width: 60%; margin: 0 auto; margin-top:2rem;">
+            <img style="width:100%; max-width:1200px;" src="../Assets/Images/Blog/WSP/storyboard.webp">
+            <br>
+            <p style="text-align: left; margin-top:-0rem; color:gray">
+               Early storyboard for the boss intro sequence (ASEI used to be pretty small)  - Jan. 2023
+            </p>
+        </div>
+
+        <div style=" width: 60%; margin: 0 auto; margin-top:2rem;">
+            <img style="width:100%; max-width:1200px;" src="../Assets/Images/Blog/WSP/LVL4_initchase.webp">
+            <br>
+            <p style="text-align: left; margin-top:-0rem; color:gray">
+               Level 4 chase concept  - Dec. 2024
+            </p>
+        </div>
+
+        <div style=" width: 60%; margin: 0 auto; margin-top:2rem;">
+            <img style="width:100%; max-width:1200px;" src="../Assets/Images/Blog/WSP/final.webp">
+            <br>
+            <p style="text-align: left; margin-top:-0rem; color:gray">
+               WSP scale test, how did they get there? - Aug. 2024
+            </p>
+        </div>
+
+    </div>
+
+     <div class="bottom"></div>
+
+    <script src="../Assets/JS/code.js"></script>
+
+
+</body>
